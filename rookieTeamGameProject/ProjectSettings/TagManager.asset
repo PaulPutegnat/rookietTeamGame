@@ -3,7 +3,18 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Mur Sol
+  - Team1
+  - Team2
+  - Team0
+  - Team3
+  - Team4
+  - Team6
+  - Team7
+  - Team8
+  - Team9
+  - Team10
   layers:
   - Default
   - TransparentFX
