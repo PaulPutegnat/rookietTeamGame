@@ -12,6 +12,6 @@ EditorBuildSettings:
     path: Assets/Scenes/T0.unity
     guid: 2e003aaaa67bef547954918e819d0e51
   - enabled: 1
-    path: Assets/Scenes/SalleArcade.unity
+    path: Assets/SalleScenes/SalleArcade.unity
     guid: 2cf9656fac5423d46b5ce7d472ce22f9
   m_configObjects: {}
