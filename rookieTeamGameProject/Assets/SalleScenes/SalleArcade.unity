@@ -2473,6 +2473,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b302e4f753a72b4b82f8b5c9a11e06a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  anim: {fileID: 2127259547}
   speed: 5
 --- !u!95 &2127259547
 Animator:
@@ -2506,8 +2507,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.2029323}
-  m_Size: {x: 1.28, y: 1.6858646}
+  m_Offset: {x: -0.28477806, y: -1.0574812}
+  m_Size: {x: 5.836453, y: 20.485989}
   m_Direction: 0
 --- !u!50 &2127259549
 Rigidbody2D:
