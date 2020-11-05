@@ -1,0 +1,24 @@
+fileFormatVersion: 2
+guid: 1978c68e4e8ed3c40bb15b4e49d06475
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - placeableItem: {instanceID: 0}
+  - shapeSlot: {instanceID: 0}
+  - matSlot: {instanceID: 0}
+  - powerSlot: {instanceID: 0}
+  - T8_item_shape1_material1: {fileID: 21300000, guid: 9f9fcaf4808f5dc43820be52e6d0fa7e, type: 3}
+  - T8_item_shape1_material2: {fileID: 21300000, guid: b900b2e4e0a07534984bc3b97e24c72f, type: 3}
+  - T8_item_shape1_material3: {fileID: 21300000, guid: b9c0abcd929cf404187e9e2338bf2336, type: 3}
+  - T8_item_shape2_material1: {fileID: 21300000, guid: 455da9eb1ee4ba6469facd2149386023, type: 3}
+  - T8_item_shape2_material2: {fileID: 21300000, guid: d007bbdc68a3d9d4c883c67f2f5413bd, type: 3}
+  - T8_item_shape2_material3: {fileID: 21300000, guid: 8526aab4f08c8da4f9a9cd2d005e994b, type: 3}
+  - T8_item_shape3_material1: {fileID: 21300000, guid: 087dd62c5a6397e4bb7fc0ff4182d6ae, type: 3}
+  - T8_item_shape3_material2: {fileID: 21300000, guid: 7283144282383ac4db121676e0d1454f, type: 3}
+  - T8_item_shape3_material3: {fileID: 21300000, guid: e4006990f51c87f458960ae09d373c97, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
