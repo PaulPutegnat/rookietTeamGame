@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Mouvement : MonoBehaviour
 {
@@ -36,9 +37,13 @@ public class Mouvement : MonoBehaviour
         {
             anim.SetBool("speed", false);
         }
-
-
     }
 
-
-}
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Team1"))
+        {
+            SceneManager.LoadScene("T1Menu");
+        }
+    }
+ }
