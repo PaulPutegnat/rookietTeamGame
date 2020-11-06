@@ -10,6 +10,8 @@ public class Mouvement : MonoBehaviour
 
     private SpriteRenderer SpriteR;
 
+    public bool isInTeam3 = false;
+
     [SerializeField] private float speed;
 
     void Start()
@@ -37,13 +39,38 @@ public class Mouvement : MonoBehaviour
         {
             anim.SetBool("speed", false);
         }
+
+
+        
+    }
+
+    private void Update()
+    {
+        if (isInTeam3 && Input.GetMouseButtonDown(0))
+        {
+            SceneManager.LoadScene("Smileyxique");
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Team1"))
+        /*if (collision.gameObject.CompareTag("Team1"))
         {
             SceneManager.LoadScene("T1Menu");
+        }*/
+
+        if (collision.gameObject.CompareTag("Team3"))
+        {
+            isInTeam3 = true;
         }
     }
- }
+
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Team3"))
+        {
+            isInTeam3 = false;          
+        }
+    }
+}
