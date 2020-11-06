@@ -31,14 +31,14 @@ public class Mouvement : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (Input.GetKey("right"))
+        if (Input.GetKey("right") || Input.GetKey(KeyCode.D))
         {
             anim.SetBool("speed", true);
             SpriteR.flipX = false;
             transform.Translate(Time.deltaTime * speed, 0, 0);
         }
         else
-        if (Input.GetKey("left"))
+        if (Input.GetKey("left") || Input.GetKey(KeyCode.Q))
         {
             anim.SetBool("speed", true);
             SpriteR.flipX = true;
