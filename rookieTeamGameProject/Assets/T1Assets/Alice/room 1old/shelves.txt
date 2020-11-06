@@ -1,1 +1,0 @@
-le shelves.png est un élément qui se met en bas, séparé du fond car logiquement le sprite du perso doit passer derrière elles
