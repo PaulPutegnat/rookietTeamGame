@@ -11,6 +11,7 @@ public class T3_SoundController : MonoBehaviour
     public AudioClip smileyDeath;
     public AudioClip takeDamage;
     public AudioClip restoreLife;
+    public AudioClip tnt;
     void Awake()
     {
         if (Instance != null)
@@ -38,6 +39,11 @@ public class T3_SoundController : MonoBehaviour
     public void MakeRestoreLifeSound()
     {
         MakeSound(restoreLife);
+    }
+    
+    public void MakeTNTSound()
+    {
+        MakeSound(tnt);
     }
 
     private void MakeSound(AudioClip originalClip)

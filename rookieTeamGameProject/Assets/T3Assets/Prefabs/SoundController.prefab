@@ -47,3 +47,4 @@ MonoBehaviour:
   smileyDeath: {fileID: 8300000, guid: e0671e25cc1daaa44bcd62b54175e55a, type: 3}
   takeDamage: {fileID: 8300000, guid: 86badac65c9b1994784a20648d13a992, type: 3}
   restoreLife: {fileID: 8300000, guid: 7567391ac3fb55f4aad9f028584f4ab9, type: 3}
+  tnt: {fileID: 8300000, guid: 6ad5928d105c9ff43a79ad7777843362, type: 3}

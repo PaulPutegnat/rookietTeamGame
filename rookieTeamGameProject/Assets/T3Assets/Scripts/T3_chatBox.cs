@@ -319,6 +319,7 @@ public class T3_chatBox : MonoBehaviour
                     if (bomb.name == "TNT(Clone)" || bomb.name == "Smile(Clone)" || bomb.name == "Wink(Clone)" || bomb.name == "Laugh(Clone)" || bomb.name == "Shocked(Clone)" || bomb.name == "Cry(Clone)" || bomb.name == "Mad(Clone)" || bomb.name == "Coeur(Clone)" || bomb.name == "Blaze(Clone)" || bomb.name == "Malice(Clone)" || bomb.name == "Love(Clone)")
                     {
                         Destroy(bomb);
+                        T3_SoundController.Instance.MakeTNTSound();
                     }
                 }
             }

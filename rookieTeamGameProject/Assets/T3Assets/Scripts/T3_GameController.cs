@@ -13,7 +13,8 @@ public class T3_GameController : MonoBehaviour
     public GameObject startScreen;
     public GameObject tutoScreen;
     public GameObject pausePanel;
-    public GameObject score;
+    public GameObject scoreInGame;
+    public GameObject scoreDeath;
 
     private bool isStartScreenActive = true;
     private bool isTutoScreenPassed = false;
@@ -73,7 +74,7 @@ public class T3_GameController : MonoBehaviour
 
     public void RetryButton()
     {
-        score.GetComponent<Text>().text = "0";
+        scoreInGame.GetComponent<Text>().text = "0";
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         Time.timeScale = 1;
     }
@@ -82,6 +83,7 @@ public class T3_GameController : MonoBehaviour
     {
         Time.timeScale = 0;
         defeatPanel.SetActive(true);
+        scoreDeath.GetComponent<Text>().text = scoreInGame.GetComponent<Text>().text;
         hudPanel.SetActive(false);
     }
 
