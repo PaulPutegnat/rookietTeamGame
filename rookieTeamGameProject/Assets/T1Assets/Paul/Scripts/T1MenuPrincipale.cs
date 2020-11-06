@@ -15,4 +15,8 @@ public class T1MenuPrincipale : MonoBehaviour {
         Application.Quit();
     }
 
+    public void controle(){
+        FindObjectOfType<AudioManagerT1>().Play("Menu");
+    }
+
 }

@@ -51,6 +51,7 @@ public class PlayerHPT1 : MonoBehaviour
             return;
         }else{
             currentHP -= damage;
+            FindObjectOfType<AudioManagerT1>().Play("DamageTaken");
             StartCoroutine("InvulFrame");
         }
 

@@ -106,6 +106,7 @@ public class PlayerMoveT1 : MonoBehaviour
                 Instantiate(tornade3, firePoint.position, firePoint.rotation);
             }    
         }
+        FindObjectOfType<AudioManagerT1>().Play("Shot");
         inv.Deleteitem();
         
     }

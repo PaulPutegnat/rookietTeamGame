@@ -23,7 +23,7 @@ public int maxHp;
 
     void Update()
     {
-        score_Manager scoreManager = scoreMaster.GetComponent<score_Manager>();
+        score_ManagerT1 scoreManager = scoreMaster.GetComponent<score_ManagerT1>();
 
         if(currentHP <= 0){
             GameObject.Find("EnemyList").GetComponent<EnemyListT1>().numberOfEnnemies -= 1;
@@ -50,6 +50,7 @@ public int maxHp;
 
     IEnumerator InvulFrame(){
         GetComponent<SpriteRenderer>().color = Color.red;
+        FindObjectOfType<AudioManagerT1>().Play("Touch!");
         yield return new WaitForSeconds(0.2f);
         GetComponent<SpriteRenderer>().color = Color.white;
     }
