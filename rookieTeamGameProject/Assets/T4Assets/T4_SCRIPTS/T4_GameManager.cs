@@ -30,7 +30,11 @@ public class T4_GameManager : MonoBehaviour
     public GameObject PausePanel;
     public GameObject loseScore;
     public GameObject winScore;
+    public Sprite[] decountImgs;
+    public Image decount;
     Text scoreTxt;
+    public bool hasWin = false;
+    public bool hasFinished = false;
 
 
     public GameObject wavesHolder;
@@ -53,7 +57,8 @@ public class T4_GameManager : MonoBehaviour
         player = player.gameObject;
         coeffEnemiesInRound = round;
         //CreateRound();
-        CreateWave();
+        StartCoroutine(Decount());
+        
     }
 
     // Update is called once per frame
@@ -83,7 +88,7 @@ public class T4_GameManager : MonoBehaviour
 
     }
 
-    void Pause(bool isPaused)
+    public void Pause(bool isPaused)
     {
         if (isPaused)
         {
@@ -114,6 +119,26 @@ public class T4_GameManager : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
+    
+    IEnumerator Decount()
+    {
+        yield return new WaitForSeconds(1.0f);
+        decount.gameObject.SetActive(true);
+        for (int i = 0; i < decountImgs.Length; i++)
+        {
+            decount.gameObject.SetActive(true);
+            decount.sprite = decountImgs[i];
+            yield return new WaitForSeconds(0.5f);
+            decount.gameObject.SetActive(false);
+            yield return new WaitForSeconds(0.5f);
+        }
+
+        //yield return new WaitForSeconds(1.0f);
+        decount.gameObject.SetActive(false);
+        CreateWave();
+    }
+
+
     void CreateWave()
     {
        Debug.Log(wave);
@@ -136,6 +161,8 @@ public class T4_GameManager : MonoBehaviour
 
     void Win()
     {
+        hasFinished = true;
+        hasWin = true;
         winScore.GetComponent<Text>().text = score.ToString();
         stuff.SetActive(false);
         lifeContainer.SetActive(false);
@@ -145,6 +172,8 @@ public class T4_GameManager : MonoBehaviour
 
     public void Lose() 
     {
+        hasFinished = true;
+        hasWin = false;
         loseScore.GetComponent<Text>().text = score.ToString();
         stuff.SetActive(false);
         lifeContainer.SetActive(false);

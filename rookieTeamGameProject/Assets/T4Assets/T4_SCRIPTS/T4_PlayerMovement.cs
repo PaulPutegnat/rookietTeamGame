@@ -9,6 +9,7 @@ public class T4_PlayerMovement : MonoBehaviour
     Rigidbody rb;
     float movHorizontal;
     float movVertical;
+    public float speed;
     Vector3 movement;
     public bool isCouroutineInactive = false;
     bool hasHit = false;
@@ -21,6 +22,13 @@ public class T4_PlayerMovement : MonoBehaviour
     Transform flame;
     public float flameXOffset;
     public float flameZOffset;
+
+    public float maxDist;
+
+    public float frontDashDistance;
+    public float coeffFrontDashSpeed;
+    public float backDashDistance;
+    public float coeffBackDashSpeed;
 
     public bool isFirstAttack;
     T4_PlayerController charaPool;
@@ -81,7 +89,7 @@ public class T4_PlayerMovement : MonoBehaviour
         movVertical = Input.GetAxis("Vertical");
         movHorizontal = Input.GetAxis("Horizontal");
         movement = new Vector3(movHorizontal, 0, movVertical);
-        rb.MovePosition(rb.position + movement * 5 * Time.fixedDeltaTime);
+        rb.MovePosition(rb.position + movement * speed * Time.fixedDeltaTime);
 
         Vector3 mouse_pos = Input.mousePosition;
 
@@ -249,7 +257,7 @@ public class T4_PlayerMovement : MonoBehaviour
 
     void Stomp()
     {
-
+        GetComponent<T4_PlayerController>().isInvicible = true;
         Instantiate(explo,transform.position,transform.rotation,null) ;
 
         Collider[] stompCollider = Physics.OverlapSphere(transform.position, 5.0f);
@@ -285,18 +293,16 @@ public class T4_PlayerMovement : MonoBehaviour
             {
                 playerHit = true;
                 GetComponent<T4_PlayerController>().DealDamage(false, hit.gameObject);
+                if (playerHit == true)
+                {
+                    Instantiate(CàCHit, hit.transform.position, transform.rotation, null);//AUDIO//
+                }
             }
 
-            if (playerHit == true)
-            {
-                Instantiate(CàCHit, transform.position, transform.rotation, null);//AUDIO//
-            }
-            else
+            if (playerHit == false)
             {
                 missAudio.SetActive(true);
             }
-               
-
         }
 
         yield return new WaitForSeconds(0.5f);
@@ -308,7 +314,6 @@ public class T4_PlayerMovement : MonoBehaviour
     IEnumerator StompKnockback(float distance, GameObject hit)
     {
         //Debug.Log(hit.gameObject);
-        float maxDist = 5.0f;
         float actualDist = distance;
         float speed = -(actualDist - maxDist);
         Vector3 lockPos = transform.position;
@@ -325,6 +330,7 @@ public class T4_PlayerMovement : MonoBehaviour
         }
         GetComponent<T4_PlayerController>().DealDamage(true, hit.gameObject);
         yield return new WaitForSeconds(0.1f);
+        GetComponent<T4_PlayerController>().isInvicible = false;
     }
 
     IEnumerator Dash(int distValue, Vector3 direction, Collider hit)
@@ -358,12 +364,12 @@ public class T4_PlayerMovement : MonoBehaviour
 
 
 
-                while (distance > (distValue - (distValue / 3)))
+                while (distance > (distValue - (distValue / frontDashDistance)))
                 {
 
                     transform.position = Vector3.Lerp(
                     transform.position, direction,
-                    Time.deltaTime * speed / distance);
+                    Time.deltaTime * (speed * coeffFrontDashSpeed) / distance);
                     distance = Vector3.Distance(transform.position, direction);
                     yield return new WaitForSeconds(0.01f);
                 }
@@ -382,7 +388,7 @@ public class T4_PlayerMovement : MonoBehaviour
                     yield return new WaitForSeconds(0.01f);
                 }
                 GetComponent<T4_PlayerController>().DealDamage(true, hit.gameObject);
-                Instantiate(CàCSpeHit, transform.position, transform.rotation, null);//AUDIO//
+                Instantiate(CàCSpeHit, hit.transform.position, transform.rotation, null);//AUDIO//
             }
             else
             {
@@ -411,11 +417,11 @@ public class T4_PlayerMovement : MonoBehaviour
             else
             {
                 
-                for (float i = 0; i < 6; i += 0.3f)
+                for (float i = 0; i < 6; i += backDashDistance)
                 {
                     transform.position = Vector3.Lerp(
                     transform.position, direction,
-                    Time.deltaTime * (speed / 3) / distance);
+                    Time.deltaTime * ((speed / 3) * coeffBackDashSpeed) / distance);
                     distance = Vector3.Distance(transform.position, direction);
                     yield return new WaitForSeconds(0.01f);
                 }
