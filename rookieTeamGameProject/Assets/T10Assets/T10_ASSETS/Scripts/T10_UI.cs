@@ -5,19 +5,24 @@ using UnityEngine.UI;
 class T10_UI : MonoBehaviour
 {
     public bool isGameMenued, isGamePaused;
+    public bool isControlMenued;
     public float timeScale;
     GameObject MenuLayer, InGameLayer, PauseLayer;
     Button PlayButton, PauseButton, ResumeButton, MenuButton, MainMenuButton, QuitButton;
     Button RetryButtonEnd, MainMenuButtonEnd, QuitButtonEnd;
+    Button ControlButton, ControlButtonPause, ReturnButton;
     GameObject ScoreText, MenuLayerEnd;
     T10_PlayerFight Player;
     public GameObject playerGO;
+    public Animator animator;
+    public GameObject ControlLayer;
     void Awake()
     {
         // Layers
         MenuLayer = GameObject.Find("MenuLayer");
         InGameLayer = GameObject.Find("InGameLayer");
         PauseLayer = GameObject.Find("PauseLayer");
+        ControlLayer = GameObject.Find("CONTROLES");
         // Buttons
         PlayButton = GameObject.Find("PlayButton").GetComponent<Button>();
         PauseButton = GameObject.Find("PauseButton").GetComponent<Button>();
@@ -25,6 +30,10 @@ class T10_UI : MonoBehaviour
         MenuButton = GameObject.Find("MenuButton").GetComponent<Button>();
         MainMenuButton = GameObject.Find("MainMenuButton").GetComponent<Button>();
         QuitButton = GameObject.Find("QuitButton").GetComponent<Button>();
+
+        ControlButton = GameObject.Find("ControlButton").GetComponent<Button>();
+        ControlButtonPause = GameObject.Find("ControlButtonPause").GetComponent<Button>();
+        ReturnButton = GameObject.Find("ReturnButton").GetComponent<Button>();
         // EndMenu
         MenuLayerEnd = GameObject.Find("MenuEnd");
         ScoreText = GameObject.Find("Score");
@@ -43,6 +52,11 @@ class T10_UI : MonoBehaviour
         MenuButton.onClick.AddListener(MenuGame);
         MainMenuButton.onClick.AddListener(MainMenuGame);
         QuitButton.onClick.AddListener(QuitGame);
+
+        ControlButton.onClick.AddListener(DisplayControlMenu);
+        ControlButtonPause.onClick.AddListener(DisplayControlMenu);
+        ReturnButton.onClick.AddListener(HideControlMenu);
+        ControlLayer.SetActive(false);
     }
     void Update()
     {
@@ -59,6 +73,8 @@ class T10_UI : MonoBehaviour
     void PauseResumeGame() { isGamePaused ^= true; }
     void PlayGame() { isGameMenued ^= true; isGamePaused = false; playerGO.GetComponent<T10_MovementPlayer>().enabled = true; }
     void MenuGame() { SceneManager.LoadScene("T10_SCENE"); PlayerPrefs.SetInt("ScoreTeam10", 0); }
+    void DisplayControlMenu() { ControlLayer.SetActive(true); isGameMenued = false; }
+    void HideControlMenu() { ControlLayer.SetActive(false); isGameMenued = true; }
     void MainMenuGame()
     {
         Time.timeScale = 1f;
