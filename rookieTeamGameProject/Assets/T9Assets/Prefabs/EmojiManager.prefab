@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4764599638501667776
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4764599638501667782}
+  - component: {fileID: 4764599638501667783}
+  m_Layer: 0
+  m_Name: EmojiManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4764599638501667782
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4764599638501667776}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4764599638501667783
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4764599638501667776}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e76afb0179035d74fb1ab61859b8422d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  emojieSprites:
+  - {fileID: 21300000, guid: 19d7200c66bcd074da21aae94485b9fc, type: 3}
+  - {fileID: 21300000, guid: fb2406fcd4aed144eb32894abc289aef, type: 3}
+  - {fileID: 21300000, guid: 038090f7b62b3514394102a90b85192f, type: 3}
+  - {fileID: 21300000, guid: 4d2b64d2d9bdeb047a6d4a3811dc3a41, type: 3}
+  - {fileID: 21300000, guid: e16cbc7885b47de47b487070f4b84c84, type: 3}
+  - {fileID: 21300000, guid: 6074c8ae6f3f8844e8f776e7bbf1c0d9, type: 3}
+  - {fileID: 21300000, guid: d5e4103bd3af3e9419583de024057bbe, type: 3}
+  - {fileID: 21300000, guid: 699deaedb61ed244fbc5203ce9b8258e, type: 3}
+  - {fileID: 21300000, guid: f0d9790253d44c84189d982fb0704db8, type: 3}
+  - {fileID: 21300000, guid: 5872e551e6242844092cdde799a850fc, type: 3}
+  - {fileID: 21300000, guid: 5558fe63842f35c49903dd8fb6e238fa, type: 3}
+  - {fileID: 21300000, guid: 6fff726d2327ef04fa2ef721278903d4, type: 3}
+  - {fileID: 21300000, guid: 7371595534822a8439f106f02675c208, type: 3}
+  - {fileID: 21300000, guid: 1c9dac12b4adf0e4889c582edbd2ca86, type: 3}
+  - {fileID: 21300000, guid: f7386ffbd16c1af439b4633ced70ee1e, type: 3}
+  - {fileID: 21300000, guid: 9b002e408a74e034ab17dcf138022c57, type: 3}
+  - {fileID: 21300000, guid: b51dfbd90547489449d1724baeb58751, type: 3}
+  - {fileID: 21300000, guid: 39ac6094af029b1438606612085e95a4, type: 3}
+  - {fileID: 21300000, guid: adc6de72167b1b545b136812f89e09f5, type: 3}
+  - {fileID: 21300000, guid: d480d064696f613478e6d321b0fc7661, type: 3}
+  pressurePlates:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  boss: {fileID: 0}
+  rollTime: 0
+  combinaison: 
