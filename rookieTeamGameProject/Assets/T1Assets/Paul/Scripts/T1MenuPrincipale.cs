@@ -12,7 +12,7 @@ public class T1MenuPrincipale : MonoBehaviour {
     public void quitterJeu()
     {
         Debug.Log("QUITTER");
-        Application.Quit();
+        SceneManager.LoadScene("SalleArcade", LoadSceneMode.Single);
     }
 
     public void controle(){
