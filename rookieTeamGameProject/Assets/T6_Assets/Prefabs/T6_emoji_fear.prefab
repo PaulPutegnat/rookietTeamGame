@@ -1,0 +1,103 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &449413333279907267
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -5949155285644934538, guid: 0b4260fff68cdf9418dd062844ab41b4, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 138282036220347332, guid: 0b4260fff68cdf9418dd062844ab41b4, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.049371038
+      objectReference: {fileID: 0}
+    - target: {fileID: 138282036220347332, guid: 0b4260fff68cdf9418dd062844ab41b4, type: 3}
+      propertyPath: m_Radius
+      value: 0.7323066
+      objectReference: {fileID: 0}
+    - target: {fileID: 138282036220347332, guid: 0b4260fff68cdf9418dd062844ab41b4, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.02289672
+      objectReference: {fileID: 0}
+    - target: {fileID: 138282036220347332, guid: 0b4260fff68cdf9418dd062844ab41b4, type: 3}
+      propertyPath: m_UsedByEffector
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 138282036220347332, guid: 0b4260fff68cdf9418dd062844ab41b4, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3432451852259687958, guid: 0b4260fff68cdf9418dd062844ab41b4, type: 3}
+      propertyPath: emojiType
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3432451852259687958, guid: 0b4260fff68cdf9418dd062844ab41b4, type: 3}
+      propertyPath: particles
+      value: 
+      objectReference: {fileID: 8807933133774824076, guid: 522a1f86fc46216429e991c869b896b9, type: 3}
+    - target: {fileID: 8301695065577990274, guid: 0b4260fff68cdf9418dd062844ab41b4, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 9ba440d1a743822469cf63fb949535bf, type: 3}
+    - target: {fileID: 8301695065577990275, guid: 0b4260fff68cdf9418dd062844ab41b4, type: 3}
+      propertyPath: m_Name
+      value: T6_emoji_fear
+      objectReference: {fileID: 0}
+    - target: {fileID: 8301695065577990284, guid: 0b4260fff68cdf9418dd062844ab41b4, type: 3}
+      propertyPath: particles
+      value: 
+      objectReference: {fileID: 8807933133774824076, guid: 522a1f86fc46216429e991c869b896b9, type: 3}
+    - target: {fileID: 8301695065577990284, guid: 0b4260fff68cdf9418dd062844ab41b4, type: 3}
+      propertyPath: destroyEmoji
+      value: Explosion
+      objectReference: {fileID: 0}
+    - target: {fileID: 8301695065577990285, guid: 0b4260fff68cdf9418dd062844ab41b4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8301695065577990285, guid: 0b4260fff68cdf9418dd062844ab41b4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8301695065577990285, guid: 0b4260fff68cdf9418dd062844ab41b4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8301695065577990285, guid: 0b4260fff68cdf9418dd062844ab41b4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8301695065577990285, guid: 0b4260fff68cdf9418dd062844ab41b4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8301695065577990285, guid: 0b4260fff68cdf9418dd062844ab41b4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8301695065577990285, guid: 0b4260fff68cdf9418dd062844ab41b4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8301695065577990285, guid: 0b4260fff68cdf9418dd062844ab41b4, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8301695065577990285, guid: 0b4260fff68cdf9418dd062844ab41b4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8301695065577990285, guid: 0b4260fff68cdf9418dd062844ab41b4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8301695065577990285, guid: 0b4260fff68cdf9418dd062844ab41b4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0b4260fff68cdf9418dd062844ab41b4, type: 3}
