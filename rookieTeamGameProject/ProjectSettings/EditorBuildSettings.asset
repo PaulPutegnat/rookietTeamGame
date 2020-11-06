@@ -11,4 +11,55 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/T3Assets/Scenes/Smileyxique.unity
     guid: 12b2b8c8d33d1e946887dab9f3d65254
+  - enabled: 1
+    path: Assets/T6_Assets/Scenes/T6_GameScene.unity
+    guid: 34ba587aa56b5094f93e227cad91b6da
+  - enabled: 1
+    path: Assets/T10Assets/T10_SCENE.unity
+    guid: 1f3185f165ac0224392fb2e99ac94c12
+  - enabled: 1
+    path: Assets/T9Assets/Scenes/Proto malik.unity
+    guid: 6bfbd9cfd9c5e7b4d825f0ee0cea83c4
+  - enabled: 1
+    path: Assets/T4Assets/T4_SCENES/T4_Menu.unity
+    guid: 597713e2326bf8b42b3cbbf33180aeb5
+  - enabled: 1
+    path: Assets/T4Assets/T4_SCENES/T4_Level.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/T8Assets/TEAM8_Scenes/T8Main.unity
+    guid: 1a2813fc284ea21419caf23478bd9bf8
+  - enabled: 1
+    path: Assets/T1Assets/Paul/Scenes/T1Menu.unity
+    guid: ddb2d1bf89d76b1488a54d3d161f826b
+  - enabled: 1
+    path: Assets/T1Assets/Luca3/_uca2/Scenes/EndingT1.unity
+    guid: 781c1ec4df2ebcd4daf315cb656ba7ee
+  - enabled: 1
+    path: Assets/T1Assets/Luca3/_uca2/Scenes/RouletteTimeT1.unity
+    guid: 557070dd8a0d2f24ba7bdc87e5d629af
+  - enabled: 1
+    path: Assets/T1Assets/Luca3/_uca2/Scenes/SceneTestT1.unity
+    guid: ce49f39f06cdfaa4da418dd849b4a765
+  - enabled: 1
+    path: Assets/T2Assets/T2Scenes/SceneLeo.unity
+    guid: bc3003384ba0b18489d776b9b5f6fc1b
+  - enabled: 1
+    path: Assets/T0Assets/SceneFinalTeamVague/M1 TeamVague.unity
+    guid: cd6ec15f904e06b46b076e5c43209bfa
+  - enabled: 1
+    path: Assets/T0Assets/SceneFinalTeamVague/M2 TeamVague.unity
+    guid: 0ae27274fec00a549920dd5e14bfc840
+  - enabled: 1
+    path: Assets/T0Assets/SceneFinalTeamVague/M3 TeamVague.unity
+    guid: fa5e2a0078023054ca1d87d7d5457da7
+  - enabled: 1
+    path: Assets/T0Assets/SceneFinalTeamVague/M4 TeamVague.unity
+    guid: 5482468d1cc704044aa1290e36e826aa
+  - enabled: 1
+    path: Assets/T0Assets/SceneFinalTeamVague/ScoringTeamVague.unity
+    guid: f170dadc7c085c5479537bf6fc9187cb
+  - enabled: 1
+    path: Assets/T7_Assets/TEAM7_SCENE/Darius.unity
+    guid: f0f97d82d59dca74799745ed24af7f8c
   m_configObjects: {}

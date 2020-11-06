@@ -87,7 +87,7 @@ public class Mouvement : MonoBehaviour
 
         if (isInTeam7 && Input.GetMouseButtonDown(0))
         {
-            SceneManager.LoadScene("T7");
+            SceneManager.LoadScene("Darius");
         }
 
         if (isInTeam8 && Input.GetMouseButtonDown(0))
