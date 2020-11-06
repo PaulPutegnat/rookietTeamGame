@@ -26,6 +26,10 @@ public class AudioManagerTeamVague : MonoBehaviour
 		{
 			Destroy(gameObject);
 		}
+		else if (SceneManager.GetActiveScene().name == "SalleArcade")
+		{
+			Destroy(gameObject);
+		}
 	}
 
 	void Awake()
