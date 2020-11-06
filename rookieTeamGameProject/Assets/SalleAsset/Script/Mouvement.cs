@@ -57,17 +57,17 @@ public class Mouvement : MonoBehaviour
     {
         if (isInTeam0 && Input.GetMouseButtonDown(0))
         {
-            SceneManager.LoadScene("Smileyxique");
+            SceneManager.LoadScene("M1 TeamVague");
         }
 
         if (isInTeam1 && Input.GetMouseButtonDown(0))
         {
-            SceneManager.LoadScene("Smileyxique");
+            SceneManager.LoadScene("T1Menu");
         }
 
         if (isInTeam2 && Input.GetMouseButtonDown(0))
         {
-            SceneManager.LoadScene("Smileyxique");
+            SceneManager.LoadScene("SceneLeo");
         }
 
         if (isInTeam3 && Input.GetMouseButtonDown(0))
@@ -77,32 +77,32 @@ public class Mouvement : MonoBehaviour
 
         if (isInTeam4 && Input.GetMouseButtonDown(0))
         {
-            SceneManager.LoadScene("Smileyxique");
+            SceneManager.LoadScene("T4_Menu");
         }
 
         if (isInTeam6 && Input.GetMouseButtonDown(0))
         {
-            SceneManager.LoadScene("Smileyxique");
+            SceneManager.LoadScene("T6_GameScene");
         }
 
         if (isInTeam7 && Input.GetMouseButtonDown(0))
         {
-            SceneManager.LoadScene("Smileyxique");
+            SceneManager.LoadScene("T7");
         }
 
         if (isInTeam8 && Input.GetMouseButtonDown(0))
         {
-            SceneManager.LoadScene("Smileyxique");
+            SceneManager.LoadScene("T8Main");
         }
 
         if (isInTeam9 && Input.GetMouseButtonDown(0))
         {
-            SceneManager.LoadScene("Smileyxique");
+            SceneManager.LoadScene("Proto malik");
         }
 
         if (isInTeam10 && Input.GetMouseButtonDown(0))
         {
-            SceneManager.LoadScene("Smileyxique");
+            SceneManager.LoadScene("T10_SCENE");
         }
     }
 
