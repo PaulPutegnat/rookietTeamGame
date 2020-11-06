@@ -51,7 +51,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -98,5 +98,3 @@ MonoBehaviour:
   rangeSpawn: 12
   timeBeforeSpawnValue: 4
   enemyType: {fileID: 273016224002529623, guid: fe57cf09727e4d24f9835e4a595ef7f3, type: 3}
-  door: {fileID: 0}
-  nbrEnemySpawn: {fileID: 0}
